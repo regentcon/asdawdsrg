@@ -1,0 +1,10 @@
+if _G.FW then return end
+_G.FW = true
+
+local loder = {
+    [4777817887] = "https://raw.githubusercontent.com/regentcon/asdasd/refs/heads/main/asdasd", -- Blade Ball
+}
+
+if loder[game.GameId] then
+    loadstring(game:HttpGet(loder[game.GameId]))()
+end
